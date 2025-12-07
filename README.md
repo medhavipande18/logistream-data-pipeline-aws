@@ -8,10 +8,6 @@ The transformed, normalized data is consolidated into an **Amazon Redshift Serve
 
 ---
 
-## 📁 Repository Structure & Code Organization
-
-The repository is structured to clearly separate infrastructure, ETL logic, DDL scripts, source data, and documentation for reproducibility.
-
 ```text
 ## 📁 Repository Structure & Code Organization
 
