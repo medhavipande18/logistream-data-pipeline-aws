@@ -120,11 +120,12 @@ Follow these steps to replicate the LogiStream data pipeline in your own AWS env
    - Execute `data_warehouse/ddl_snowflake_schema.sql`  
    - This creates all **8 Dimension** and **1 Fact** tables
 
-7. **Create JDBC Connection**  
-   - In AWS Glue, create a **Redshift JDBC Connection** (`Redshift connection`)  
-   - Ensure it links Glue to Redshift within the same VPC configuration
+7. **Create JDBC Connection**
+   - In AWS Glue, create a **Redshift connection** (`Redshift connection`)  
+   - Configure it to securely link Glue to your Redshift Serverless workgroup within the same VPC and subnet  
+   - Ensure proper security group rules are in place to allow connectivity on **port 5439**
 
-8. **Create & Run Glue ETL Job (PySpark)**  
+9. **Create & Run Glue ETL Job (PySpark)**  
    - Use `etl_jobs/glue_master_etl.py` to define the ETL workflow  
    - The job will:
      - Extract data from cataloged sources  
