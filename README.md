@@ -1,6 +1,6 @@
-# 🚀 LogiStream Supply Chain Data Pipeline: S3 to Redshift Data Warehouse
+# LogiStream Supply Chain Data Pipeline: S3 to Redshift Data Warehouse
 
-## 💡 Introduction: Project Aim and Scope
+## Introduction: Project Aim and Scope
 
 The **LogiStream** cloud data pipeline is engineered as a robust **hybrid solution**, optimized for scalable ingestion and transformation of both structured (CSV) and semi-structured (GeoJSON) data.  
 This architecture utilizes **Amazon S3** for secure data staging and storage, **AWS Glue** for centralized data cataloging and complex **PySpark ETL** processing, and **AWS Lambda** for specialized GeoJSON flattening.  
@@ -9,7 +9,7 @@ The transformed, normalized data is consolidated into an **Amazon Redshift Serve
 *Data Source:* https://www.kaggle.com/datasets/aaumgupta/refined-dataco-supply-chain-geospatial-dataset
 ---
 
-## 📁 Repository Structure & Code Organization
+## Repository Structure & Code Organization
 
 ```
 The repository is structured to clearly separate infrastructure, ETL logic, DDL scripts, source data, and documentation for reproducibility.
@@ -47,7 +47,7 @@ LogiStream-SupplyChain-DW/
 ```
 ---
 
-## 📐 Data Warehouse Creation and Multidimensional Modeling
+## Data Warehouse Creation and Multidimensional Modeling
 
 The Data Warehouse was modeled by transforming flat operational data into an optimized **OLAP (Online Analytical Processing)** structure.
 
@@ -74,7 +74,7 @@ The Data Warehouse was modeled by transforming flat operational data into an opt
 
 ---
 
-## 💻 AWS Architecture & Service Components
+## AWS Architecture & Service Components
 
 The pipeline is deployed entirely in **AWS US East (Ohio – `us-east-2`)**, using a serverless architecture for scalability and cost efficiency.
 
@@ -92,7 +92,7 @@ The pipeline is deployed entirely in **AWS US East (Ohio – `us-east-2`)**, usi
 
 ---
 
-## 🛠️ Step-by-Step Execution Guide (Replicability)
+## Step-by-Step Execution Guide (Replicability)
 
 Follow these steps to replicate the LogiStream data pipeline in your own AWS environment.
 
@@ -142,7 +142,7 @@ Follow these steps to replicate the LogiStream data pipeline in your own AWS env
 
 ---
 
-## 📊 Business Intelligence & Insights
+## Business Intelligence & Insights
 The project concludes with a 3-page Power BI dashboard designed for different organizational levels:
 
 1. **Executive Summary (Strategic)**
@@ -158,5 +158,5 @@ Enables deep-dive investigation into specific problematic orders through **Drill
 
 ---
 
-✅ **End Result:**  
+**End Result:**  
 A fully automated, serverless AWS data pipeline that ingests, transforms, and loads both CSV and GeoJSON data into a Redshift Snowflake Schema and finally an interactive Power BI Dashboard for proactive decision-making.
