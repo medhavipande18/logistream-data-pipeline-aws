@@ -129,7 +129,7 @@ Follow these steps to replicate the LogiStream data pipeline in your own AWS env
    - Execute `data_warehouse/ddl_snowflake_schema.sql`  
    - This creates all **8 Dimension** and **1 Fact** tables
 
-7. **Create JDBC Connection**
+7. **Create RedShift Connection**
    - In AWS Glue, create a **Redshift connection** (`Redshift connection`)  
    - Configure it to securely link Glue to your Redshift Serverless workgroup within the same VPC and subnet  
    - Ensure proper security group rules are in place to allow connectivity on **port 5439**
